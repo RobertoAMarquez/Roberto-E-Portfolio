@@ -312,6 +312,14 @@ footer{
   background-color: black;
 }
 
+.footer__row{
+  padding: 5rem;
+}
+
 .footer__img{
-  justify-content: center;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
