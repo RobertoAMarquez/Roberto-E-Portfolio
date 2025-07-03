@@ -29,7 +29,23 @@ p {
 
 a {
   text-decoration: none;
+  position: relative;
 }
+
+.link__hover--effect:after{
+content:"";
+position: absolute;
+height: 3px;
+background-color: black;
+width: 0%;
+bottom:-3px;
+left: 0;
+}
+
+.link_hover--effect:hover:after{
+width: 100%;
+}
+
 .flex {
   display: flex;
 }
@@ -321,20 +337,18 @@ footer {
 }
 
 .footer__logo {
-  margin-bottom: 2px;
+  
 }
 
 .footer__social--list {
   width: auto;
   max-width: 500px;
   margin-bottom: 25px;
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+
 }
-.footer__social--link{
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .footer__logo--img {
   width: 100px;
@@ -356,9 +370,11 @@ footer {
 }
 
 .footer__anchor {
+  margin-bottom: 2px;
   position: relative;
+  display: inline-flex;
+  align-items: flex-end;
+
 }
 
-.footer__anchor{
-  position: relative;
-}
+
