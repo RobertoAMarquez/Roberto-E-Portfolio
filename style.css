@@ -54,7 +54,7 @@ i:hover{
   background-color: black;
 }
 
-.link_hover--effect:hover:after {
+.link__hover--effect:hover:after {
   width: 100%;
   left: 0;
 }
